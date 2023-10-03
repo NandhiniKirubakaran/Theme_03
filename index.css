@@ -25,6 +25,15 @@ body {
     font-weight: 600;
     padding-left:500px;
 }
+.event-box {
+    width: 18rem; 
+    color: #0a2050;
+    margin: 0 0 20px 0;  
+    object-fit: cover;  
+    border-radius: 20px; 
+    border-color: #e7d619; 
+    text-align: center; 
+}
 .card img{
     aspect-ratio: 16/9;
     border-radius: 20px;
@@ -142,4 +151,102 @@ form.btn2{
  .service-title{
     padding-left: 100px;
     padding-top: 50px;
+}
+
+@media (max-width: 481px) {
+    .header_section .container-fluid {
+       padding: 0;
+    }
+    .slider_section {
+        padding-bottom: 0;
+       }
+       .carousel-item img {
+        height: 250px;
+       width: auto;
+       }
+       .slider_section .row {
+        padding: 0;
+        /* margin: 0 auto; */
+       }
+       .container-fluid {
+        padding: 0;
+        margin: 0;
+       }
+       .slider_section .col-md-5 {
+        margin: 0 auto;
+        padding: 0;
+       }
+     .about_section {
+        padding-bottom: 0;
+        padding-top: 60px;
+     }  
+     .pet_section {
+        padding-top: 50px;
+        padding-bottom: 20px;
+     }
+     .pet_section .container{
+        padding: 0;
+     }
+     .pet_section .container .col-md-6{
+        padding: 0;
+     }
+     #events {
+        padding: 0;
+        margin: 0 auto;
+     }
+     #events .event-heading{
+        text-align: center;
+        padding: 0;
+     }
+     #events {
+        padding: 0;
+        margin: 0 auto;
+       }
+        .box-title {
+            font-size: medium;
+        }
+        .card-text {
+            font-size: small;
+        }
+        .event-box {
+            margin: 0 auto;
+        }
+        #gallery .gallery-heading {
+            text-align: center;
+            padding: 0;
+            padding-top: 20px;
+        }
+        .animal_section{
+            padding: 0;
+            margin: 0 auto;
+        }
+        .animal_section .container {
+            padding: 0;
+            margin: 0;
+        }
+        .animal_section .container .animal_container .box{
+            padding: 0;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+        .gallery-heading {
+            text-align: center;
+            padding: 0;
+            padding-top: 20px;
+        }
+        .info_section {
+            padding: 0;
+            margin: 0 auto;
+        }
+        .info_section .row .form_container {
+            width: 350px;
+            padding: 0;
+        }
+        .info_section .row  {
+            padding: 0;
+        }
+        .contact-right {
+            width: 350px;
+        }
+ 
 }
