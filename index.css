@@ -248,5 +248,10 @@ form.btn2{
         .contact-right {
             width: 350px;
         }
+        #hls-example {
+            margin: 0 auto;
+            height: 250px;
+            width: 350px;
+        }
  
 }
