@@ -32,6 +32,27 @@
 </head>
 
 <body>
+
+  <!-- <p id="result"></p> -->
+
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+</div>
+
+
+<script>
+// Get the deployed URL
+const deployedURL = window.location.href;
+
+// Remove dots, extra spaces, and hostname from the URL
+const cleanedURL = deployedURL.replace(/[.\s]+/g, '').replace(/^https?:\/\//, '').split('/')[0];
+
+// Display only the website name (domain)
+document.getElementById('result').textContent = cleanedURL;
+</script>
+
+<div class="content">
+
   <div class="hero_area ">
     <!-- header section strats -->
     <header class="header_section">
@@ -93,7 +114,7 @@
               <div class="row">
                 <div class="col-md-5 offset-md-1">
                   <div class="detail-box">
-                    <img src="assests/Baby.jpg" class="d-block"  id="slider1"  alt="..." >
+                    <img src="" class="d-block"  id="slider1"  alt="..." >
                   </div>
                 </div>
               </div>
@@ -104,7 +125,7 @@
               <div class="row">
                 <div class="col-md-5 offset-md-1">
                   <div class="detail-box">
-                    <img src="assests/Temple.jpg" class="d-block"  id="slider1"  alt="..." >
+                    <img src="" class="d-block"  id="slider1"  alt="..." >
                   </div>
                 </div>
               </div>
@@ -115,7 +136,7 @@
               <div class="row">
                 <div class="col-md-5 offset-md-1">
                   <div class="detail-box">
-                    <img src="assests/Chruch.jpg" class="d-block"  id="slider1"  alt="..." >
+                    <img src="" class="d-block"  id="slider1"  alt="..." >
                   </div>
                 </div>
               </div>
@@ -299,22 +320,6 @@
     </div>
   </section>
 
-  <!-- end us section -->
-
-  
-
-  
-
-  <!-- contact section -->
-<!-- 
-  <section class="contact_section layout_padding-top">
-    <div class="container-fluid">
-      
-    </div>
-  </section>
-
-  end contact section -->
-
 
   <!-- info section -->
   <section class="info_section ">
@@ -378,7 +383,7 @@
     </p>
   </section>
   <!-- end  footer section -->
-
+</div>
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
@@ -396,6 +401,19 @@
 <script>
 var player = videojs('hls-example');
 player.play();
+</script>
+
+<script>
+  window.addEventListener('load', function () {
+      const loaderWrapper = document.querySelector('.loader-wrapper');
+      const content = document.querySelector('.content');
+
+      // Hide the loader
+      loaderWrapper.style.display = 'none';
+      
+      // Show the content
+      content.style.visibility = 'visible';
+  });
 </script>
 
 </body>
