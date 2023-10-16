@@ -152,9 +152,9 @@ a:focus {
           align-items: center;
 }
 
-.navbar-brand img {
+/* .navbar-brand img {
   width: 65px;
-}
+} */
 
 .custom_nav-container {
   z-index: 99999;
